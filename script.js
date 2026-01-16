@@ -11,7 +11,7 @@ ecoou pelos corredores de Hogwarts.
 Prepare-se para uma nova jornada.
 
 Atenciosamente,
-Escola de Magia e Bruxaria de Hogwarts`;
+Escola de Magia e Bruxaria de Hogwarts;
 
 let index = 0;
 const textBox = document.getElementById("text");
@@ -105,3 +105,4 @@ function magicExplosion() {
     setTimeout(() => spark.remove(), 2000);
   }
 }
+
