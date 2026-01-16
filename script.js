@@ -1,10 +1,10 @@
 document.addEventListener("DOMContentLoaded", () => {
 
 /* 📝 TEXTO DA CARTA */
-const letterText = `Prezado(a) Bruxo(a),
+const letterText = `Prezada Caroline,
 
 É com grande honra que informamos
-que você foi convocado(a)
+que você foi convocada
 para celebrar mais um ano de vida.
 
 Sua mente curiosa, criativa e sábia
@@ -126,3 +126,4 @@ window.magicExplosion = function () {
 };
 
 });
+
