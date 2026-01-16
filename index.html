@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <title>Carta de Hogwarts — Corvinal 🦅</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!-- Logo Corvinal SVG -->
+<div id="ravenclaw-symbol">
+  <img src="assets/corvinal.svg" alt="Corvinal" />
+</div>
+
+<!-- Música -->
+<audio id="music" src="assets/music.mp3" loop></audio>
+<button id="musicBtn">🎵</button>
+
+<!-- Carta -->
+<div class="letter" id="letter">
+  <h1>Escola de Magia e Bruxaria de Hogwarts</h1>
+  <p class="subtitle">Diretor: Alvo Dumbledore</p>
+
+  <div class="content" id="text"></div>
+
+  <button class="open-btn" onclick="openLetter()">Abrir Carta</button>
+</div>
+
+<!-- História Corvinal -->
+<div id="story" class="hidden">
+
+  <section class="scene">
+    <h2>Sabedoria acima de tudo</h2>
+    <p>
+      Hoje não celebramos apenas um aniversário,
+      mas a existência de uma mente inquieta,
+      criativa e profundamente curiosa.
+      A Corvinal reconhece aqueles que enxergam
+      o mundo além do óbvio.
+    </p>
+  </section>
+
+  <section class="scene">
+    <h2>Inteligência que transforma</h2>
+    <p>
+      Seu verdadeiro poder não está apenas no que você sabe,
+      mas na forma como pensa.
+      Questionar, compreender e criar
+      são dons raros — e você os carrega com naturalidade.
+    </p>
+  </section>
+
+  <section class="scene">
+    <h2>Criatividade e visão</h2>
+    <p>
+      Onde muitos veem limites,
+      você enxerga possibilidades.
+      Sua criatividade é o feitiço mais raro:
+      aquele que transforma ideias em caminhos
+      e sonhos em realidade.
+    </p>
+  </section>
+
+  <section class="scene">
+    <h2>O verdadeiro poder</h2>
+    <p>
+      A magia mais poderosa não vem da varinha,
+      mas da mente que a conduz.
+      Que este novo ano seja repleto de descobertas,
+      crescimento e conquistas dignas da Corvinal.
+    </p>
+  </section>
+
+  <section class="scene final">
+    <h2>Feliz Aniversário 🦅</h2>
+    <p>
+      Que a sabedoria guie seus passos,
+      que o conhecimento ilumine seus caminhos
+      e que a magia do pensar jamais deixe você.
+    </p>
+
+    <button class="magic-end" onclick="magicExplosion()">
+      ✨ Concluir Celebração
+    </button>
+  </section>
+
+</div>
+
+<canvas id="magic"></canvas>
+
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,173 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Cinzel', serif;
+}
+
+body {
+  background: radial-gradient(circle, #0b0b0b, #000);
+  color: #f5deb3;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+/* 🎵 Música */
+#musicBtn {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  font-size: 22px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  z-index: 10;
+}
+
+/* 📜 Carta */
+.letter {
+  background: #fdf5e6;
+  color: #2c1a05;
+  width: 90%;
+  max-width: 600px;
+  margin: 80px auto;
+  padding: 40px;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 0 40px rgba(255,215,0,0.4);
+  transform-origin: top;
+}
+
+.letter.opening {
+  animation: scrollOpen 2s ease forwards;
+}
+
+@keyframes scrollOpen {
+  to {
+    transform: scaleY(0);
+    opacity: 0;
+  }
+}
+
+.subtitle {
+  margin-bottom: 20px;
+  font-size: 14px;
+}
+
+.open-btn {
+  margin-top: 30px;
+  padding: 12px 30px;
+  background: #5c3b1e;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+/* 🦅 Tema Corvinal */
+body.corvinal {
+  background: radial-gradient(circle at top, #0a1f44, #020814);
+  color: #e3ebff;
+}
+
+.hidden {
+  display: none;
+}
+
+#story {
+  padding: 80px 20px;
+  position: relative;
+  z-index: 2;
+}
+
+.scene {
+  text-align: center;
+  margin-bottom: 90px;
+}
+
+.scene h2 {
+  color: #7fb7ff;
+  margin-bottom: 20px;
+}
+
+.scene p {
+  max-width: 720px;
+  margin: auto;
+  font-size: 18px;
+  line-height: 1.8;
+}
+
+.scene::before {
+  content: "🦅";
+  display: block;
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.scene.final {
+  color: #ffd27d;
+}
+
+/* 🦅 Logo SVG */
+#ravenclaw-symbol {
+  position: fixed;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  pointer-events: none;
+  z-index: 1;
+  transition: opacity 2s ease;
+}
+
+#ravenclaw-symbol img {
+  width: 420px;
+  opacity: 0.06;
+  animation: ravenFloat 10s ease-in-out infinite;
+  filter: drop-shadow(0 0 50px rgba(127,183,255,0.4));
+}
+
+body.corvinal #ravenclaw-symbol {
+  opacity: 1;
+}
+
+@keyframes ravenFloat {
+  50% { transform: translateY(-20px) scale(1.04); }
+}
+
+/* 🎇 Botão final */
+.magic-end {
+  margin-top: 40px;
+  padding: 16px 40px;
+  font-size: 18px;
+  background: linear-gradient(45deg, #7fb7ff, #ffd27d);
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  box-shadow: 0 0 20px rgba(127,183,255,0.6);
+}
+
+/* ✨ Explosão */
+.spark {
+  position: fixed;
+  width: 6px;
+  height: 6px;
+  background: radial-gradient(circle, #ffd27d, #7fb7ff);
+  border-radius: 50%;
+  animation: explode 2s ease-out forwards;
+  z-index: 999;
+}
+
+@keyframes explode {
+  to {
+    transform: translate(var(--x), var(--y));
+    opacity: 0;
+  }
+}
+
+canvas {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+}
