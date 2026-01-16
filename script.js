@@ -60,7 +60,7 @@ if (music && btn) {
   });
 }
 
-/* 🪄 Penas mágicas */
+/*  Penas mágicas */
 const canvas = document.getElementById("magic");
 if (canvas) {
   const ctx = canvas.getContext("2d");
@@ -126,4 +126,5 @@ window.magicExplosion = function () {
 };
 
 });
+
 
